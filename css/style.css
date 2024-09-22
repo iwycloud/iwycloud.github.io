@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7EDD0; 
+}
+
+nav {
+    background-color: #F7EDD0; 
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #970C10;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+.current {
+    border-bottom: #947360 solid 3px;
+}
+
+li:hover {
+    border-bottom: #bca191 solid 3px;
+}
+
+#main_home h1 {
+    text-align:center;
+    color: #970C10;
+    font-family:Verdana
+}
+
+#our_story h1 {
+    text-align:center;
+    color:#F7EDD0;
+    font-family:Verdana;
+    padding: 60px 0 0 0;
+}
+
+#our_story p {
+    text-align:center;
+    color:#F7EDD0;
+    font-family:Verdana;
+    padding: 10px 60px;
+}
+
+#our_story {
+    background-color: #A1AFA0;
+    height: 300px;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+}
+#main_menu {
+    position: relative;
+    top: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: #947360 ;
+}
+
+.grid-item {
+    background-color: #947360;
+    height: 100px;
+    border: 1px solid #F7EDD0;
+    padding: 50px 0 0 0;
+    font-size: 30px;
+    color: #F7EDD0;
+    text-align: center;
+}
+
+.grid-item:nth-child(2n) {
+    background-color:#A1AFA0;
+}
+
+.cake-menu {
+    background-color: #947360 ;
+    color:#F7EDD0;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+    margin: 0 0 100px 0;
+}
+
+.menu-item {
+    margin: 0 0 40px 0;
+}
+
+.menu-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 3px; 
+    border: 3px solid #F7EDD0; 
+}
+
+.menu-image:hover {
+    border: 10px solid #A1AFA0;
+}
+
+footer {
+    background-color:#F7EDD0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 300px;
+}
+
+footer>div {
+    text-align: left;
+    color: #970C10;
+
+}
+
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: #970C10;
+    color:#F7EDD0;
+    opacity: 0;
+  }
+
+.skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
